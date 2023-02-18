@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="france">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence de voyage</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>R</span>elax<span>&F</span>ly</a>
+
+    <nav class="navbar">
+        <a href="#accueil">accueil</a>
+        <a href="#vol">vol</a>
+        <a href="#destination">destination</a>
+        <a href="#services">services</a>
+        <a href="#gallery">gallerie</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="login.php" method="post">
+        <h3>connexion</h3>
+        <input type="email" class="box" placeholder="entrez votre email" name="email">
+        <input type="password" class="box" placeholder="entrez votre mot de passe" name="password">
+        <input type="submit" value="se connecter" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">souviens de moi</label>
+        <p>mot de passe oublié <a href="#">cliquez ici</a></p>
+        <p>vous n'avez pas un compte <a href="inscrire.php">S'inscrire maintenant</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="accueil">
+
+    <div class="content">
+        <h3>votre plus beau voyage    </h3>
+        <p>commence ici !</p>
+        <a href="apropos.html" class="btn">découvrir plus</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- book section starts  -->
+
+<section class="book" id="vol">
+
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>e</span>
+        <span>r</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/book-img.svg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>destination</h3>
+                <input type="text" placeholder="nom de la place">
+            </div>
+            <div class="inputBox">
+                <h3>nombre de personnes</h3>
+                <input type="number" placeholder="nombre de personnes">
+            </div>
+            <div class="inputBox">
+                <h3>arrivée</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>sortie</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="reserver maintenant">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- book section ends -->
+
+<!-- packages section starts  -->
+
+<section class="packages" id="destination">
+
+    <h1 class="heading">
+        <span>d</span>
+        <span>e</span>
+        <span>s</span>
+        <span>t</span>
+        <span>i</span>
+        <span>n</span>
+        <span>a</span>
+        <span>t</span>
+        <span>i</span>
+        <span>o</span>
+        <span>n</span>       
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/venice.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> venice </h3>
+                <p>Venise, capitale de la région de la Vénétie au nord de l'Italie, occupe plus de 100 petites îles dans un lagon de la mer Adriatique. La ville ne comprend aucune route, uniquement des canaux, dont le Grand Canal, bordé de palais gothiques et Renaissance.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 900.00dhs <span>1200.00dhs</span> </div>
+                <a href="login.php" class="btn">reserver maintenant</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> hawaii </h3>
+                <p>Hawaii, un État américain, est un archipel volcanique isolé dans le Pacifique central. Ses îles sont réputées pour leurs paysages accidentés composés de falaises, de chutes d'eau, de forêt tropicale et de plages dont le sable arbore des teintes  noires, voire</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 900.00dhs <span>1200.00dhs</span> </div>
+                <a href="login.php" class="btn">reserver maintenant</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/canada.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> canada </h3>
+                <p>Le Canada est un pays nord-américain situé entre les États-Unis au sud et le cercle polaire au nord. Les principales villes sont Toronto, Vancouver, centre du cinéma de la côte ouest, Montréal et Québec, toutes deux francophones, et Ottawa, la capitale.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 900.00dhs <span>1200.00dhs</span> </div>
+                <a href="inscrire.php" class="btn">reserver maintenant</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> paris </h3>
+                <p>Paris, capitale de la France, est une grande ville européenne et un centre mondial de l'art, de la mode, de la gastronomie et de la culture.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 900.00dhs <span>1200.00dhs</span> </div>
+                <a href="login.php" class="btn">reserver maintenant</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> tokyo </h3>
+                <p>Au Japon, la partie orientale de la préfecture de Tokyo est divisée en 23 arrondissements spéciaux, plus désignés comme les 23 arrondissements.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 900.00dhs <span>1200.00dhs</span> </div>
+                <a href="login.php" class="btn">reserver maintenant</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/Chile.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> chile </h3>
+                <p>Le Chili est un étroit couloir de terre qui s’étend le long de la côte ouest de l’Amérique du Sud.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 9000dhs <span>120000dhs</span> </div>
+                <a href="login.php" class="btn">reserver maintenant</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- packages section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>hôtels abordables</h3>
+            <p>Trouvez l'hébergement Idéal sur notre site, le Plus Grand Site de Voyages au Monde. Des Réservations Faciles, Rapides, Sécurisées et Sans Frais, et un Tarif Garanti.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>nourriture et boissons</h3>
+            <p>Cuisine, spécialités gastronomiques et plats emblématiques à goûter Maroc, mais aussi boissons, vins et alcools locaux.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>guide de sécurité</h3>
+            <p>Le guide ultime pour voyager zen : la bible sur la sécurité en voyage ! "Le guide de Fabrice permet au voyageur peu expérimenté d'envisage</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>autour du monde</h3>
+            <p>Autour du Monde est le fruit d’une longue réflexion autour du terme « voyage »
+qui renvoie nécessairement à l’idée :  De découverte, D'exploration, De rencontres, Et, finalement, de valeurs</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>voyage le plus rapide</h3>
+            <p>La compétition est lancée entre transport ferroviaire et transport aérien. Les deux acteurs ne manquent pas d’idées pour rivaliser avec leur concurrent.!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>aventures</h3>
+            <p>Les Aventureurs, c'est une agence de voyage nouvelle génération, reconnue et recommandée par plusieurs milliers de voyageurs qui nous font confiance.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>i</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/g-1.jpg" alt="">
+            <div class="content">
+                <h3>Endroits extraordinaires</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-2.jpg" alt="">
+            <div class="content">
+                <h3>Endroits extraordinaires</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-3.jpg" alt="">
+            <div class="content">
+                <h3>Endroits extraordinaires</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-4.jpg" alt="">
+            <div class="content">
+                <h3>Endroits extraordinaires</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-5.jpg" alt="">
+            <div class="content">
+                <h3>Endroits extraordinaires</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-6.jpg" alt="">
+            <div class="content">
+                <h3>Endroits extraordinaires</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-7.jpg" alt="">
+            <div class="content">
+                <h3>Endroits extraordinaires</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-8.jpg" alt="">
+            <div class="content">
+                <h3>Endroits extraordinaires</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-9.jpg" alt="">
+            <div class="content">
+                <h3>Endroits extraordinaires</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic1.png" alt="">
+                    <h3>Melinda Gates</h3>
+                    <p>Melinda Gates, 52 ans, est mariée à l'homme le plus riche des États-Unis. Leur maison est un manoir de haute technologie sur les rives du lac Washington avec une bibliothèque abritant le Codex Leicester, une collection d'écrits originaux de Léonard de Vinci.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic2.png" alt="">
+                    <h3>Angelina Jolie</h3>
+                    <p>Cette star d’Hollywood a un tatouage sur l'épaule qui indique les coordonnées géographiques du lieu de naissance de tous ses enfants. Cette femme figure parmi les plus grands voyageurs du monde et emmène toujours sa famille avec elle</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic3.png" alt="">
+                    <h3>Reid Stowe</h3>
+                    <p>Ce grand voyageur intrépide a effectué le plus long voyage en mer dans l'histoire de l'humanité sans assistance. 1, 152 jours à bord de sa goélette Anne et a battu le précédent record de 1, 067 jours établi par un navire norvégien dans les années 1890.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic4.png" alt="">
+                    <h3>Le Dalaï Lama</h3>
+                    <p>Il a rendu visite à Barack Obama à la Maison Blanche à 4 reprises et a mené une marche pour la paix à Londonderry. Il a également donné une conférence sur le bonheur à Brisbane, et il est monté dans un remonte-pente à Santa Fe lors de sa visite à la communauté tibétaine de cette ville</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/contact-img.svg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="nom">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="numéro">
+                <input type="text" placeholder="sujet">
+            </div>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="envoyer message">
+        </form>
+
+    </div>
+    
+</section>
+
+<!-- contact section ends -->
+
+<!-- brand section  -->
+<section class="brand-container">
+
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+        </div>
+    </div>
+
+</section>
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>à propos</h3>
+            <p>Nous savons que vous ne manquez ni d’offres intéressantes, ni de services sur-mesure. Nous savons aussi que vous êtes habitués à pouvoir tout choisir, à tout moment, depuis chez vous. Et que l’agence de voyages, c’est un peu contraignant ou ce n’est juste pas vraiment vous.</p>
+        </div>
+        <div class="box">
+            <h3>Emplacement de la succursale</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+        <div class="box">
+            <h3>Liens rapides</h3>
+            <a href="#">home</a>
+            <a href="#">vol</a>
+            <a href="#">destination</a>
+            <a href="#">services</a>
+            <a href="#">galleries</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> wahsousse wissal </span> | all rights reserved! </h1>
+
+</section>
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>

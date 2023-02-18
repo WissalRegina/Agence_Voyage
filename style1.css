@@ -1,0 +1,21 @@
+h2{
+	text-align: center;
+	font-size: 58px;
+	color: black;
+
+}
+form{
+	text-align: center;
+	margin: auto;
+	width: 480px;
+	background-color:orange;
+	opacity: .8;
+}
+body{
+	background-image: url("images/banniere.gif");
+	height: 100%;
+  /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
